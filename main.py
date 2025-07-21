@@ -4,6 +4,7 @@
 import pygame
 # import constant values
 from constants import *
+from player import Player
 
 def main():
     # initialize pygame
@@ -16,6 +17,7 @@ def main():
 
     # create a clock object
     clock = pygame.time.Clock()
+    player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     dt = 0
 
     # create game loop
@@ -25,7 +27,8 @@ def main():
                 return
 
         # fills the whole screen with color black
-        pygame.Surface.fill(screen, "black")
+        screen.fill("black")
+        player.draw(screen)
         pygame.display.flip()
 
         # set fps to 60 frames per second
