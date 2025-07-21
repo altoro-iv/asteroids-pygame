@@ -26,8 +26,13 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        # calling update method each frame before rendering
+        player.update(dt)
+
         # fills the whole screen with color black
         screen.fill("black")
+
+        # draws player on the screen
         player.draw(screen)
         pygame.display.flip()
 
