@@ -1,6 +1,4 @@
-# this allows us to use code from
-# the open-source pygame library
-# throughout this file
+import sys
 import pygame
 # import constant values
 from constants import *
@@ -47,6 +45,12 @@ def main():
                 return
 
         updatable.update(dt)
+
+        for asteroid in asteroids:
+            if asteroid.collision(player):
+                print("Game over!")
+                sys.exit()
+
 
         # fills the whole screen with color black
         screen.fill("black")
