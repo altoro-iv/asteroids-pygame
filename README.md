@@ -1,7 +1,7 @@
-🚀 Asteroids Pygame
+# 🚀 Asteroids Pygame
 My take on the classic Asteroids arcade game, built using Python and Pygame. You're a Raptor sent in a ship through space to destroy asteroids heading straight to Earth that could wipe out all dinosaurking. This is a foundational version of the game with plans for new features and polishing it up as I learn more!
 
-🎮 Features
+# 🎮 Features
  Player-controlled spaceship
 
  Basic asteroid spawning and movement
@@ -13,7 +13,7 @@ My take on the classic Asteroids arcade game, built using Python and Pygame. You
  Game loop with basic win/lose conditions
 
 
-🛠️ In Progress / Planned Features
+# 🛠️ In Progress / Planned Features
 I'm actively working to expand the game. Here are some features I plan to add:
 
  Scoring System – Track points for destroying asteroids
